@@ -84,7 +84,7 @@ PROJETO-FACUL/
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/sistema-gestao-escolar.git
+git clone https://github.com/bituserdev/sistema-gestao-escolar.git
 ```
 
 2. Configure o banco de dados

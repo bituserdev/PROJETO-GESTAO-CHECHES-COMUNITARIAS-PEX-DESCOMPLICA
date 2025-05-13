@@ -1,137 +1,188 @@
+# 🎓 Sistema de Gestão Escolar - Controle de Presença
 
+> Projeto de Extensão – Curso de Análise e Desenvolvimento de Sistemas  
+> **Instituição:** Descomplica Faculdades
 
+<p align="center">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.tFUSM6b7aekTnDALuzW7vQHaD4?rs=1&pid=ImgDetMain" alt="Descomplica Faculdades" width="300"/>
+</p>
 
-          
-# Sistema de Gestão Escolar - Controle de Presença
-> Projeto de Extensão - Análise e Desenvolvimento de Sistemas
+<p align="center">
+  <img src="https://img.shields.io/github/license/bituserdev/sistema-gestao-escolar?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/languages/top/bituserdev/sistema-gestao-escolar?style=for-the-badge"/>
+  <img src="https://komarev.com/ghpvc/?username=bituserdev&label=Visualiza%C3%A7%C3%B5es&color=blue&style=for-the-badge"/>
+</p>
+
+---
 
 ## 📋 Sobre o Projeto
-Sistema web desenvolvido para gerenciamento escolar com foco no controle de presença de alunos, oferecendo uma solução eficiente e moderna para instituições educacionais.
+
+Sistema web desenvolvido com foco no **gerenciamento escolar**, oferecendo uma solução moderna e eficiente para o **controle de presença dos alunos** com visualizações gráficas, relatórios exportáveis, gestão de usuários e muito mais.
+
+🔒 **Uso exclusivo para fins educacionais.**  
+🚫 **É expressamente proibida a venda ou comercialização deste sistema.**
+
+---
 
 ## 🎯 Objetivo
-Automatizar e otimizar o processo de controle de frequência escolar, proporcionando uma ferramenta intuitiva para professores e gestores acompanharem o desenvolvimento dos alunos.
+
+Automatizar e otimizar o processo de controle de frequência escolar, fornecendo uma ferramenta intuitiva para professores e gestores acompanharem o desenvolvimento acadêmico dos alunos.
+
+---
 
 ## 🚀 Funcionalidades Principais
 
 ### 👥 Gestão de Usuários
-- Cadastro e gerenciamento de alunos
-- Cadastro e gerenciamento de professores
-- Níveis de acesso diferenciados (Diretor/Professor)
+- Cadastro e gerenciamento de **alunos**
+- Cadastro e gerenciamento de **professores**
+- Níveis de acesso distintos: **Diretor** e **Professor**
 
 ### ✅ Controle de Presença
-- Registro diário de frequência
-- Interface intuitiva para marcação
-- Filtros por turma e período
-- Cálculo automático de percentual de presença
+- Registro diário de presença
+- Interface prática para marcação
+- Filtros por **turma** e **período**
+- Cálculo automático do percentual de presença
 
-### 📊 Relatórios
+### 📊 Relatórios e Gráficos
 - Geração de relatórios detalhados
 - Filtros personalizáveis
 - Indicadores visuais de frequência
-- Exportação de dados
+- Gráficos de barras e pizza (Chart.js)
+- Exportação de dados (.xls/.csv)
+
+### 📈 Painel Administrativo
+- Dashboard com contagem de alunos, professores e presenças
+- Visualizações rápidas em cards com ícones
+- Indicadores de desempenho escolar
+
+---
 
 ## 💻 Tecnologias Utilizadas
 
 ### Backend
 - PHP 7+
 - MySQL
-- PDO para conexão segura com banco de dados
+- PDO (acesso seguro ao banco de dados)
 
 ### Frontend
-- HTML5
-- CSS3
+- HTML5 / CSS3
 - JavaScript
 - Bootstrap 5
 - FontAwesome (ícones)
+- Chart.js (gráficos)
+
+---
 
 ## 🛠️ Requisitos do Sistema
 
 ### Servidor
-- Apache/Nginx
+- Apache ou Nginx
 - PHP 7.0 ou superior
-- MySQL 5.7 ou superior
-- Extensões PHP necessárias:
-  - PDO
-  - PDO_MySQL
-  - Session
+- MySQL 5.7+
+- Extensões PHP:
+  - `PDO`
+  - `PDO_MySQL`
+  - `Session`
 
 ### Cliente
-- Navegador web atualizado
+- Navegador moderno e atualizado
 - JavaScript habilitado
 - Resolução mínima: 1024x768
 
-## 📦 Estrutura do Projeto
+---
+
+## 📁 Estrutura do Projeto
+
 ```
-PROJETO-FACUL/
+sistema-gestao-escolar/
 ├── admin/
 │   ├── alunos/
 │   ├── professores/
-│   └── presenca/
+│   ├── presenca/
+│   └── dashboard.php
 ├── assets/
 │   ├── css/
 │   ├── js/
-│   └── img/
+│   ├── img/
+│   └── charts/
 ├── includes/
 │   ├── header.php
 │   ├── footer.php
 │   └── functions.php
 ├── config/
 │   └── database.php
+├── sql/
+│   └── estrutura.sql
 └── index.php
 ```
 
-## 🔧 Instalação
+---
 
-1. Clone o repositório
+## ⚙️ Instalação
+
+1. **Clone o repositório**
 ```bash
 git clone https://github.com/bituserdev/sistema-gestao-escolar.git
 ```
 
-2. Configure o banco de dados
-- Importe o arquivo SQL fornecido
-- Configure as credenciais em `config/database.php`
+2. **Configure o banco de dados**
+   - Importe o arquivo `estrutura.sql` (na pasta `/sql`)
+   - Edite o arquivo `config/database.php` com suas credenciais
 
-3. Configure o servidor web
-- Aponte o DocumentRoot para a pasta do projeto
-- Certifique-se que o mod_rewrite está habilitado
-
-## 👥 Perfis de Acesso
-
-### Diretor
-- Acesso total ao sistema
-- Gerenciamento de usuários
-- Visualização de todos os relatórios
-
-### Professor
-- Registro de presença
-- Visualização de relatórios das suas turmas
-
-## 📈 Contribuição para o Ambiente Acadêmico
-
-- Otimização do tempo dos professores
-- Redução de erros em registros manuais
-- Facilidade no acompanhamento da frequência
-- Tomada de decisão baseada em dados
-- Conformidade com requisitos educacionais
-
-## 🤝 Contribuição
-Contribuições são bem-vindas! Para contribuir:
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature
-3. Commit suas mudanças
-4. Push para a branch
-5. Abra um Pull Request
-
-## 📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## ✨ Agradecimentos
-- Professores orientadores
-- Instituição de ensino
-- Colegas de curso
-- Comunidade open source
+3. **Configure o servidor web**
+   - Aponte o `DocumentRoot` para a pasta do projeto
+   - Certifique-se de que o módulo `mod_rewrite` esteja habilitado (caso use Apache)
 
 ---
-Desenvolvido como projeto de extensão para o curso de Análise e Desenvolvimento de Sistemas.
 
-        
+## 👤 Perfis de Acesso
+
+### 🧑‍💼 Diretor
+- Acesso total ao sistema
+- Gerenciamento de todos os usuários
+- Visualização completa dos relatórios
+
+### 👨‍🏫 Professor
+- Registro de presença
+- Acesso aos relatórios das turmas atribuídas
+
+---
+
+## 📈 Benefícios Acadêmicos
+
+- Otimização do tempo dos professores  
+- Redução de erros em registros manuais  
+- Facilidade no acompanhamento da frequência escolar  
+- Apoio à tomada de decisão com base em dados  
+- Conformidade com requisitos educacionais  
+- Visualização intuitiva com gráficos e relatórios
+
+---
+
+## 🤝 Como Contribuir
+
+1. Faça um fork do repositório  
+2. Crie uma nova branch com a sua feature: `git checkout -b minha-feature`  
+3. Commit suas alterações: `git commit -m 'feat: minha nova funcionalidade'`  
+4. Faça push para a branch: `git push origin minha-feature`  
+5. Abra um Pull Request 🚀
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença [MIT](LICENSE).  
+Distribuição autorizada **somente para fins acadêmicos**.
+
+---
+
+## ✨ Agradecimentos
+
+- Professores e orientadores  
+- Instituição Descomplica Faculdades  
+- Colegas do curso de ADS  
+- Comunidade open source 💚
+
+---
+
+Desenvolvido como projeto de extensão do curso **Análise e Desenvolvimento de Sistemas**.

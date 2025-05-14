@@ -1,9 +1,9 @@
 <?php
 try {
     $host = 'localhost';
-    $dbname = 'joaov277_painelcmm';
-    $username = 'joaov277_painelcmm';
-    $password = '97199531Aa.#';
+    $dbname = 'nome-database';
+    $username = 'usuario-database';
+    $password = 'senha-database';
     
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

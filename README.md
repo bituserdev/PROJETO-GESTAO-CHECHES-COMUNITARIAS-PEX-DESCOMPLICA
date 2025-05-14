@@ -8,8 +8,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/bituserdev/sistema-gestao-escolar?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/languages/top/bituserdev/sistema-gestao-escolar?style=for-the-badge"/>
   <img src="https://komarev.com/ghpvc/?username=bituserdev&label=Visualiza%C3%A7%C3%B5es&color=blue&style=for-the-badge"/>
 </p>
 

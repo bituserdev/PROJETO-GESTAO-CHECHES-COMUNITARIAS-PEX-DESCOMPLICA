@@ -124,7 +124,7 @@ git clone https://github.com/bituserdev/sistema-gestao-escolar.git
 ```
 
 2. **Configure o banco de dados**
-   - Importe o arquivo `estrutura.sql` (na pasta `/sql`)
+   - Importe o arquivo `database.sql` (na pasta `/sql`)
    - Edite o arquivo `config/database.php` com suas credenciais
 
 3. **Configure o servidor web**
@@ -134,6 +134,11 @@ git clone https://github.com/bituserdev/sistema-gestao-escolar.git
 ---
 
 ## 👤 Perfis de Acesso
+### 🧑‍💼 Administrador
+- Credenciais de Acesso:
+Email: admin@escola.com
+Senha: password
+
 
 ### 🧑‍💼 Diretor
 - Acesso total ao sistema
@@ -178,7 +183,6 @@ Distribuição autorizada **somente para fins acadêmicos**.
 
 - Professores e orientadores  
 - Instituição Descomplica Faculdades  
-- Colegas do curso de ADS  
 - Comunidade open source 💚
 
 ---
